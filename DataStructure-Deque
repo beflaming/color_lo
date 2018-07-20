@@ -1,0 +1,17 @@
+Deque
+
+Double-ended Queue.   
+sequence containers with dynamic sizes that can be expanded or contracted on both ends. (either its front or its back)
+
+Specific libraries may implement deques in different ways, generally as some form of dynamic array. But in any case, they allow for the individual elements to be accessed directly through random access iterators, with storage handled automatically.
+ordered in a strict linear sequence;
+relatively fast add/remove element at the beginning or the end of the sequence.
+
+at: access element
+front: access first element
+back: access last element
+push_back: add element at the end
+push_front: insert element at beginning
+pop_back: delete last element
+pop_front: delete first elemnet
+emplace_front/emplace_back: construct and insert element
