@@ -1,0 +1,2 @@
+To check whether a given graph contains a cycle or not. 
+A disjoint-set data structure keeps track of a set of elements partitioned into a number of disjoint(non-overlapping) subsets.
