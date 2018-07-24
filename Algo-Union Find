@@ -1,0 +1,40 @@
+To check whether an undirected graph contains a cycle or not.  (detect cycle)
+
+Find: Determine which subset a particular element is in, and if two elements are in the same subset. 
+Union: Join two subsets into a single subset. 
+
+Optimization.
+Union by Rank - attach smaller depth tree under the root of the deeper tree.  (rank is not always equal to height, size(in place of height) of trees can also be used as rank);
+
+Path Compressoin - make the found root as parent of x and not have to traverse all intermediate nodes again. 
+flatten the tree when find() is called, the find() operation traverses up from x to find root. 
+
+struct subset
+{
+    int parent;
+    int rank;
+}
+
+int find(struct subsets[], int i)            //find by path compression
+{
+   if(subsets[i].parent!=i)
+      subsets[i].parent = find(subsets, subsets[i].parent);
+      
+   return subsets[i].parent;
+}
+
+void Union(struct subset subsets[], int x, int y)     //union by rank
+{
+   int xroot =find(subsets,x);
+   int yroot =find(subsets,y);
+   
+   if(subsets[xroot].rank<subsets[yroot].rank)
+      subsets[xroot].parent=yroot;
+   else if(subsets[xroot].rank>subsets[yroot].rank)
+      subsets[yroot].parent=xroot;
+   else
+   {
+      subsets[yroot].parent=xroot;
+      subsets[xroot].rank++;
+   }
+}
