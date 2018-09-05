@@ -1,0 +1,9 @@
+﻿  dpAug.cpp
+c:\users\cyang\source\color_lo\dpaug\dpaug\dpaug.cpp(23): warning C4018: '<': signed/unsigned mismatch
+c:\users\cyang\source\color_lo\dpaug\dpaug\dpaug.cpp(43): warning C4018: '<': signed/unsigned mismatch
+c:\users\cyang\source\color_lo\dpaug\dpaug\dpaug.cpp(279): warning C4018: '<': signed/unsigned mismatch
+c:\users\cyang\source\color_lo\dpaug\dpaug\dpaug.cpp(299): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\cyang\source\color_lo\dpaug\dpaug\dpaug.cpp(301): warning C4018: '<': signed/unsigned mismatch
+c:\users\cyang\source\color_lo\dpaug\dpaug\dpaug.cpp(320): warning C4018: '<': signed/unsigned mismatch
+c:\users\cyang\source\color_lo\dpaug\dpaug\dpaug.cpp(327): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+  dpAug.vcxproj -> C:\Users\cyang\source\color_lo\dpAug\Debug\dpAug.exe

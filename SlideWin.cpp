@@ -67,4 +67,19 @@ class Solution{
 		}
 		return res;
 	}
+
+	//window sum
+	vector<int> winSum(vector<int>&nums, int k) {
+		if (nums.empty()) return {};
+		vector<int> res;
+		int len = nums.size();
+		int sum = 0;
+		for (int i = 0; i < len && i < k; ++i) sum += nums[i];
+		res.push_back(sum);
+		for (int j = k; j < len; ++j) {
+			sum = sum - nums[j - k] + nums[j];
+			res.push_back(sum);
+		}
+		return res;
+	}
 };

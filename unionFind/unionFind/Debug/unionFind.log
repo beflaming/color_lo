@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  unionFind.cpp
+c:\users\cyang\source\color_lo\unionfind\unionfind\unionfind.cpp(14): warning C4018: '<': signed/unsigned mismatch
+  unionFind.vcxproj -> C:\Users\cyang\source\color_lo\unionFind\Debug\unionFind.exe

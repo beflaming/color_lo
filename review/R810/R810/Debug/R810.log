@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  R810.cpp
+  wordCollection.cpp
+c:\users\cyang\source\color_lo\review\r810\r810\wordcollection.cpp(25): warning C4018: '<': signed/unsigned mismatch
+c:\users\cyang\source\color_lo\review\r810\r810\wordcollection.cpp(54): warning C4018: '>': signed/unsigned mismatch
+c:\users\cyang\source\color_lo\review\r810\r810\wordcollection.cpp(61): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  R810.vcxproj -> C:\Users\cyang\source\color_lo\review\R810\Debug\R810.exe
